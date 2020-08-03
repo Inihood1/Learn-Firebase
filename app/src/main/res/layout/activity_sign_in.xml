@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_dark"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".SignInActivity">
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <com.inihood.firebaseproject.font.FontelloTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/fontello_user"
+            android:textColor="@color/main_color_50"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <com.inihood.firebaseproject.view.FloatLabeledEditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            app:fletFloatingHint="@string/email"
+            app:fletHintTextColor="@color/white"
+            app:fletSingleLine="true"
+            app:fletTextColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical" >
+
+        <com.inihood.firebaseproject.font.FontelloTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/fontello_password"
+            android:textColor="@color/main_color_50"
+            android:textSize="16dp"
+            tools:ignore="SpUsage" />
+
+        <com.inihood.firebaseproject.view.FloatLabeledEditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            app:fletFloatingHint="@string/password"
+            app:fletHintTextColor="@color/white"
+            app:fletPassword="true"
+            app:fletSingleLine="true"
+            app:fletTextColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp" >
+
+        <com.inihood.firebaseproject.view.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            app:rippleColor="@color/main_color_grey_400" >
+
+            <com.inihood.firebaseproject.font.RobotoTextView
+                android:id="@+id/login"
+                style="@style/ButtonStyle.RaisedEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@color/main_color_900"
+                android:minWidth="112dp"
+                android:text="@string/login"
+                android:textColor="#fff" />
+        </com.inihood.firebaseproject.view.MaterialRippleLayout>
+
+        <com.inihood.firebaseproject.view.MaterialRippleLayout
+            style="@style/RippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            app:rippleColor="@color/main_color_grey_400" >
+
+            <com.inihood.firebaseproject.font.RobotoTextView
+                android:id="@+id/register"
+                style="@style/ButtonStyle.RaisedEmpty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@color/main_color_900"
+                android:minWidth="112dp"
+                android:text="@string/register"
+                android:textColor="#fff" />
+        </com.inihood.firebaseproject.view.MaterialRippleLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:layout_marginRight="5dp"
+            android:id="@+id/sign_in_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:drawableLeft="@drawable/google_icon"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Sign in with Google"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            android:drawableStart="@drawable/google_icon"
+            android:layout_marginEnd="5dp" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/sign_in_with_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in with phone"
+            android:textAllCaps="false"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:drawableLeft="@drawable/phone_icon"
+            android:textColor="@color/blue"
+            android:drawableStart="@drawable/phone_icon"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
