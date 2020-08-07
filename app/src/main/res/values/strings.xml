@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Firebase project</string>
 
+
+    <string name="default_web_client_d">1070931955648-agpg5eqdrr0uem9dtqdulsag8hkhml2k.apps.googleusercontent.com</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 
@@ -131,7 +133,7 @@
     <string name="skip">SKIP</string>
     <string name="raised">RAISED</string>
     <string name="flat">FLAT</string>
-    
+
     <!-- For Update -->
     <string name="confirm_exit">Press Back button again to exit</string>
 </resources>
